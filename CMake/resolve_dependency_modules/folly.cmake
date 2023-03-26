@@ -17,7 +17,8 @@ set(VELOX_FOLLY_BUILD_VERSION v2022.11.14.00)
 set(VELOX_FOLLY_BUILD_SHA256_CHECKSUM
     b249436cb61b6dfd5288093565438d8da642b07ae021191a4042b221bc1bdc0e)
 set(VELOX_FOLLY_SOURCE_URL
-    "https://github.com/facebook/folly/archive/${VELOX_FOLLY_BUILD_VERSION}.tar.gz"
+    # "https://github.com/facebook/folly/archive/${VELOX_FOLLY_BUILD_VERSION}.tar.gz"
+    "/data/thirdparty/folly-${VELOX_FOLLY_BUILD_VERSION}.tar.gz"
 )
 
 resolve_dependency_url(FOLLY)

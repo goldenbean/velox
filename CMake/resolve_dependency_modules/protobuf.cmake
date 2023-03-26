@@ -19,8 +19,9 @@ set(VELOX_PROTOBUF_BUILD_SHA256_CHECKSUM
 string(
   CONCAT
     VELOX_PROTOBUF_SOURCE_URL
-    "https://github.com/protocolbuffers/protobuf/releases/download/"
-    "v${VELOX_PROTOBUF_BUILD_VERSION}/protobuf-all-${VELOX_PROTOBUF_BUILD_VERSION}.tar.gz"
+    # "https://github.com/protocolbuffers/protobuf/releases/download/"
+    # "v${VELOX_PROTOBUF_BUILD_VERSION}/protobuf-all-${VELOX_PROTOBUF_BUILD_VERSION}.tar.gz"
+    "/data/thirdparty/protobuf-all-${VELOX_PROTOBUF_BUILD_VERSION}.tar.gz"
 )
 
 resolve_dependency_url(PROTOBUF)

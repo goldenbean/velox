@@ -22,9 +22,11 @@ else()
                  ${VELOX_BOOST_BUILD_VERSION})
   string(
     CONCAT BOOST_SOURCE_URL
-           "https://boostorg.jfrog.io/artifactory/main/release/"
-           "${VELOX_BOOST_BUILD_VERSION}/source/boost_"
-           "${VELOX_BOOST_UNDERSCORE_VERSION}.tar.gz")
+          #  "https://boostorg.jfrog.io/artifactory/main/release/"
+          #  "${VELOX_BOOST_BUILD_VERSION}/source/boost_"
+          #  "${VELOX_BOOST_UNDERSCORE_VERSION}.tar.gz"
+          "boost_${VELOX_BOOST_UNDERSCORE_VERSION}.tar.gz"
+        )
   set(VELOX_BOOST_BUILD_SHA256_CHECKSUM
       4b2136f98bdd1f5857f1c3dea9ac2018effe65286cf251534b6ae20cc45e1847)
 endif()
